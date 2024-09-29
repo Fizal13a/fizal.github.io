@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Layout styles */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about img {
+            width: 300px;
+            border-radius: 50%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Skills section */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .skills .icon {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .skills img {
+            width: 80px;
+        }
+
+        /* Projects section */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .project {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .project h3 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        .project p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .project .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .project .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Scroll styling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about img {
+                margin-bottom: 20px;
+            }
+
+            .projects {
+                flex-direction: column;
+            }
+
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Section -->
+    <div class="container section about">
+        <div class="about-left">
+            <img src="your-image.jpg" alt="Your Image">
+        </div>
+        <div class="about-right">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm [Your Name], a passionate Unity developer and 3D artist. I have experience creating immersive games using C#, Unity, and cutting-edge technologies. I'm always eager to learn and improve my skills, especially in blockchain technology to push the boundaries of game development. Let's build something amazing together!
+            </p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="container section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="icon">
+                <img src="csharp-icon.png" alt="C#">
+                <p>C#</p>
+            </div>
+            <div class="icon">
+                <img src="unity-icon.png" alt="Unity">
+                <p>Unity</p>
+            </div>
+            <!-- Add more skill icons here -->
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container section">
+        <h2>Works</h2>
+        <div class="projects">
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="project1-image.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Brief description of Project 1.</p>
+                <div class="buttons">
+                    <a href="project1-game-link">Game</a>
+                    <a href="project1-github-link">Git</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="project2-image.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Brief description of Project 2.</p>
+                <div class="buttons">
+                    <a href="project2-game-link">Game</a>
+                    <a href="project2-github-link">Git</a>
+                </div>
+            </div>
+            <!-- Add more projects here in the same format -->
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container section contact">
+        <h2>Let's Connect</h2>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/your-profile" target="_blank">@your-instagram-handle</a></p>
+    </div>
+
+</body>
+</html>
